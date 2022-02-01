@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_200"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@android:style/Theme.Black.NoTitleBar">
+    <TextView
+        android:layout_marginTop="200dp"
+        android:id="@+id/zagol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="34sp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/quest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"/>
+
+    <fragment
+        android:id="@+id/losbuttons"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:name="com.example.sputnikok.FragmentLevellOfStressButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/level_of_stress_fragment"/>
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Продолжить"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
